@@ -1,0 +1,77 @@
+html {
+    background-color: rgb(211, 211, 211); 
+}
+
+nav li {
+    background-color: purple;
+    display: inline-block; /*inline-block will allow us to control the width of inline elements
+    i.e. like this: 
+    display: inline-block;
+    width: 50px; */
+    padding: 0,0;
+    text-align: center; 
+    display: inline-block;
+}
+
+.triptext {
+    /*this styling will be added to all child elements called 'name_of_element_within_class' within the 'triptext' class element. */
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    flex-flow: row wrap; /*makes things move as you change page width to make it fit
+    alternatively, flex-wrap: wrap; */
+    align-items: center;
+    box-sizing: borderbox; /*changes the 'width' to apply to the border (not just content inside border)*/
+}
+
+.fixed-bar {
+    height: 70px; 
+}
+
+
+header {
+    color: magenta; /*the font colour of the header ('Lala's webpage ;) */
+    background-color: #46556b;
+    padding: 60px;
+    border: 5px dashed red;
+    margin: 10px; /*gives the distance between elements*/
+    /*margin will give a default value unless specified as margin=0 */
+
+}
+h1 {
+    text-align: center;
+    font-size: 20px; 
+    color: yellow; /*cascading means that the final generation of styling will overwrite parent formatting - as with the colour magenta above */
+    padding: 10px 20px; /*the second value of 20px changes the left and right padding, while 10px defines top and bottom padding*/
+    /*the order for padding is: TOP-RIGHT-BOTTOM-LEFT when 3 or more values given*/
+    border: 5px dashed red;
+    margin: 10px; /*gives the distance between elements*/
+    position: fixed; /*means when we scroll, it will stay put!*/
+}
+li {
+    width: 20%; 
+    display: inline-block;
+    padding: 0,0;
+    justify-content: center; /*justify-content relates to horizontal axis*/
+}
+
+a { /*this relates to the link to 'Contact' */
+    text-decoration: none; /*remove the underline */
+    color: teal;
+    background_color: magenta; /*magenta is ignored here*/
+    /*
+    display: none;   <-this will hide the element
+    */
+    vertical-align: middle; 
+}
+
+footer {
+    border: 5px solid red;
+
+}
+
+.some-class element-within-class {
+    position: relative; /*good for moving text relative to pictures*/
+    bottom: sizeoftext px; /*bumps the text up - so if you want it on top of an image*/
+}
